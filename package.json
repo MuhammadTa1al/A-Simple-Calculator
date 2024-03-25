@@ -1,0 +1,19 @@
+{
+  "name": "tb02-number-guessing-game",
+  "version": "1.0.0",
+  "description": "A number guessing game for having fun",
+  "main": "index.js",
+  "type": "module",
+  "bin": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Muhammad Talal\"",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.16"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
