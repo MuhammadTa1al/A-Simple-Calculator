@@ -2,9 +2,13 @@
 
 import inquirer from "inquirer";
 
-const randomNumber = Math.floor(Math.random() * 6 + 1);
+// 1) Computer Will generate a random number - Done.
 
-console.log("Welcome to number Guesing Game");
+// 2) User input for guessing number - Done
+
+// 3) Compare user input with computer generated number and show result - done
+
+const randomNumber = Math.floor(Math.random() * 6 + 1);
 
 const answers = await inquirer.prompt([
   {
@@ -13,8 +17,9 @@ const answers = await inquirer.prompt([
     message: "Please guess a number between 1-6: ",
   },
 ]);
+
 if (answers.userGuessedNumber === randomNumber) {
-  console.log("Congtratulations! you guessed right number.");
+  console.log("Congtratulations! you guessed right number in game.");
 } else {
-  console.log("You guessed wrong number");
+  console.log("You guessed wrong number in game.");
 }
